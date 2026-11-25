@@ -1,118 +1,91 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex, nofollow"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Jade &amp; Iron"><meta name="theme-color" content="#f1ede2" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141712" media="(prefers-color-scheme: dark)"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" href="icon-192.png"><style>:root{color-scheme:light dark;padding-top:env(safe-area-inset-top,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex, nofollow"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Jade &amp; Iron"><meta name="theme-color" content="#779768" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#779768" media="(prefers-color-scheme: dark)"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" href="icon-192.png"><style>:root{color-scheme:light dark;padding-top:env(safe-area-inset-top,0px)}body{margin:0}[hidden]{display:none!important}</style>
 <title>Jade &amp; Iron</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&display=swap">
 <style>
-/* Layout concept: one phone column. A single vertical line, the pole, is the spine of the
-   plan and of the session player: time climbs it. Everything else stays quiet paper. */
+/* Direction J (locked 2026-11-25). Layout concept: one phone column. Today opens on a field of
+   jade that runs from the top of the screen down behind the figure and meets the paper in a soft
+   rise. The session player is the same field. Everything else is quiet paper with ink lettering.
+   Spec: vault page "Pole Training App Visual Direction 2026-11-25". */
 :root {
   /* paper (light) */
-  --stage: #dfdacb;
-  --bg: #f1ede2;
-  --surface: #faf7ef;
-  --inset: #e7e2d3;
-  --line: #d6d0be;
-  --ink: #20251c;
-  --ink-2: #555b4c;
-  --ink-3: #868a79;
-  --on-ink: #f4f0e4;
-  /* the three pillars */
-  --jade: #47705a;
-  --jade-soft: #dbe5d8;
-  --iron: #4f5b66;
-  --iron-soft: #dde1e2;
-  --brass: #8f6c1f;
-  --brass-fill: #b08a3e;
-  --brass-soft: #efe4c6;
-  --blush: #a8625a;
-  --blush-soft: #f1ddd6;
-  /* figure */
-  --fig: #20251c;
-  --fig-far: #a7ab9a;
-  --fig-focus: #b08a3e;
-  --fig-focus-far: #d3bd8f;
-  --fig-ground: #faf7ef;
-  --fig-prop: #c4bda9;
-  /* studio: the session player keeps one dark look in both themes */
-  --st-bg: #11140f;
-  --st-surface: #1b1f18;
-  --st-line: #30362b;
-  --st-ink: #f0ebdc;
-  --st-ink-2: #b4b2a2;
-  --st-ink-3: #7d8072;
-  --st-brass: #d6b565;
-  --st-jade: #8fb89c;
-  --st-fig-far: #555c4d;
+  --stage: #dfe3dc;
+  --bg: #f7f8f2;
+  --surface: #eceee6;
+  --inset: #e1e5da;
+  --line: #dddfd7;
+  --ink: #142216;
+  --ink-2: #455145;
+  --ink-3: #7a8378;
+  --on-ink: #f7f8f2;
+  /* the three pillars: jade, lapis, gold. Carnelian is the one action color. */
+  --jade: #779768;
+  --jade-soft: #dfe7d8;
+  --iron: #355b92;
+  --iron-soft: #dbe2ec;
+  --brass: #7d6220;
+  --brass-fill: #d0ac59;
+  --brass-soft: #f0e7cc;
+  --blush: #b95f3f;
+  --blush-soft: #f1dcd2;
+  --carnelian: #b95f3f;
+  --on-carnelian: #f7f8f2;
+  --jade-deep: #55734b;
+  --jade-mid: #66865b;
+  --jade-text: #47633e;
+  /* the field: identical in light and dark */
+  --field: #779768;
+  --field-ink: #142216;
+  --field-ink-2: #22331f;
+  --field-ink-3: #33492f;
+  --bone: #f5f4e8;
+  --lapis: #355b92;
+  /* figure, on paper */
+  --fig: #142216;
+  --fig-far: #a9b3a3;
+  --fig-focus: #b95f3f;
+  --fig-focus-far: #dba994;
+  --fig-ground: #eceee6;
+  --fig-prop: #c2c9bb;
+  /* the session player is the field */
+  --st-bg: #779768;
+  --st-surface: #6d8d5f;
+  --st-line: #66865b;
+  --st-ink: #142216;
+  --st-ink-2: #22331f;
+  --st-ink-3: #33492f;
+  --st-brass: #b95f3f;
+  --st-jade: #f5f4e8;
+  --st-fig-far: #55734b;
   /* type */
-  --display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
   --ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Segoe UI", Roboto, Arial, sans-serif;
-  --radius: 20px;
+  --radius: 12px;
   --gutter-l: max(20px, env(safe-area-inset-left, 0px));
   --gutter-r: max(20px, env(safe-area-inset-right, 0px));
+  /* stone: a fine grain everywhere, broad low clouding on the Today field only */
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='.33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 0 .13'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  --cloud: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='900'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.0035 .0055' numOctaves='2' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .97 0 0 0 0 .98 0 0 0 0 .9 .75 0 0 0 -.29'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E");
+  --shade: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='900'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.003 .005' numOctaves='2' seed='23'/%3E%3CfeColorMatrix values='0 0 0 0 .1 0 0 0 0 .2 0 0 0 0 .1 0 .7 0 0 -.28'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E");
 }
+/* Dark appearance: derived from the light palette, not yet designed or reviewed. The field stays jade. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --stage: #0b0d0a; --bg: #141712; --surface: #1c2019; --inset: #232820; --line: #333a2e;
-    --ink: #efeadb; --ink-2: #b9b6a6; --ink-3: #85887a; --on-ink: #171a14;
-    --jade: #94bca0; --jade-soft: #24332a; --iron: #a3b0bb; --iron-soft: #262d33;
-    --brass: #d6b565; --brass-fill: #c9a650; --brass-soft: #352c15; --blush: #e0a59b; --blush-soft: #3a2420;
-    --fig: #efeadb; --fig-far: #5d6455; --fig-focus: #d6b565; --fig-focus-far: #8a7640; --fig-ground: #1c2019; --fig-prop: #4a5142;
+    --stage: #0a110b; --bg: #101a12; --surface: #1a261c; --inset: #223024; --line: #2f3f31;
+    --ink: #eef0e6; --ink-2: #b7c0b2; --ink-3: #839080; --on-ink: #101a12;
+    --jade-soft: #25352a; --iron: #7f9fd0; --iron-soft: #1f2a3a;
+    --brass: #d0ac59; --brass-soft: #3a3018; --blush: #d98464; --blush-soft: #3d241b; --jade-text: #9dbb8f;
+    --fig: #eef0e6; --fig-far: #56634f; --fig-focus: #cf7654; --fig-focus-far: #7d4a38; --fig-ground: #1a261c; --fig-prop: #46543f;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --stage: #0b0d0a; --bg: #141712; --surface: #1c2019; --inset: #232820; --line: #333a2e;
-  --ink: #efeadb; --ink-2: #b9b6a6; --ink-3: #85887a; --on-ink: #171a14;
-  --jade: #94bca0; --jade-soft: #24332a; --iron: #a3b0bb; --iron-soft: #262d33;
-  --brass: #d6b565; --brass-fill: #c9a650; --brass-soft: #352c15; --blush: #e0a59b; --blush-soft: #3a2420;
-  --fig: #efeadb; --fig-far: #5d6455; --fig-focus: #d6b565; --fig-focus-far: #8a7640; --fig-ground: #1c2019; --fig-prop: #4a5142;
+  --stage: #0a110b; --bg: #101a12; --surface: #1a261c; --inset: #223024; --line: #2f3f31;
+  --ink: #eef0e6; --ink-2: #b7c0b2; --ink-3: #839080; --on-ink: #101a12;
+  --jade-soft: #25352a; --iron: #7f9fd0; --iron-soft: #1f2a3a;
+  --brass: #d0ac59; --brass-soft: #3a3018; --blush: #d98464; --blush-soft: #3d241b; --jade-text: #9dbb8f;
+  --fig: #eef0e6; --fig-far: #56634f; --fig-focus: #cf7654; --fig-focus-far: #7d4a38; --fig-ground: #1a261c; --fig-prop: #46543f;
   color-scheme: dark;
-}
-
-/* Alternate looks, switchable in Settings so the palette can be judged in the hand. */
-:root[data-look="bloom"] {
-  --stage: #dcdccb; --bg: #ebebdf; --surface: #f6f6ec; --inset: #e0e1d1; --line: #cfd1bd;
-  --ink: #3e4a35; --ink-2: #636d57; --ink-3: #8b927d;
-  --jade: #6f7f5c; --jade-soft: #dfe5d2; --iron: #6d6a5c; --iron-soft: #e2e0d2;
-  --brass: #9a5a4e; --brass-fill: #c08a7e; --brass-soft: #f0dcd5; --blush: #9a5a4e; --blush-soft: #f0dcd5;
-  --fig: #3e4a35; --fig-far: #b3b9a3; --fig-focus: #c08a7e; --fig-focus-far: #e0c2ba; --fig-ground: #f6f6ec; --fig-prop: #c6c9b4;
-}
-:root[data-look="chrome"] {
-  --stage: #d3d5d8; --bg: #eceded; --surface: #f8f8f7; --inset: #e0e2e3; --line: #cfd2d4;
-  --ink: #1b1d20; --ink-2: #52575d; --ink-3: #858a90;
-  --jade: #3f6b73; --jade-soft: #d6e3e5; --iron: #4b5560; --iron-soft: #dde1e4;
-  --brass: #8a3f6a; --brass-fill: #b0578a; --brass-soft: #f0dbe6; --blush: #8a3f6a; --blush-soft: #f0dbe6;
-  --fig: #1b1d20; --fig-far: #a8adb2; --fig-focus: #b0578a; --fig-focus-far: #d9a9c4; --fig-ground: #f8f8f7; --fig-prop: #c3c7ca;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"])[data-look="bloom"] {
-    --stage: #0d0f0b; --bg: #171a13; --surface: #1f231a; --inset: #272c21; --line: #383e30;
-    --ink: #ecead9; --ink-2: #b8b9a5; --ink-3: #868a78;
-    --jade: #a9b996; --jade-soft: #2a3323; --iron: #b3b09f; --iron-soft: #2c2b24;
-    --brass: #e0a99d; --brass-fill: #d39a8e; --brass-soft: #3a2521; --blush: #e0a99d; --blush-soft: #3a2521;
-    --fig: #ecead9; --fig-far: #5f6653; --fig-focus: #e0a99d; --fig-focus-far: #8c6860; --fig-ground: #1f231a; --fig-prop: #4b5241;
-  }
-  :root:not([data-theme="light"])[data-look="chrome"] {
-    --stage: #08090a; --bg: #121315; --surface: #1a1c1f; --inset: #222529; --line: #33373c;
-    --ink: #eceef0; --ink-2: #b3b8be; --ink-3: #7f858c;
-    --jade: #8fc1c9; --jade-soft: #1f3033; --iron: #a6b0bb; --iron-soft: #262b31;
-    --brass: #e59ac3; --brass-fill: #d67fb0; --brass-soft: #3a1f2e; --blush: #e59ac3; --blush-soft: #3a1f2e;
-    --fig: #eceef0; --fig-far: #575c63; --fig-focus: #e59ac3; --fig-focus-far: #8f5d78; --fig-ground: #1a1c1f; --fig-prop: #474c53;
-  }
-}
-:root[data-theme="dark"][data-look="bloom"] {
-  --stage: #0d0f0b; --bg: #171a13; --surface: #1f231a; --inset: #272c21; --line: #383e30;
-  --ink: #ecead9; --ink-2: #b8b9a5; --ink-3: #868a78;
-  --jade: #a9b996; --jade-soft: #2a3323; --iron: #b3b09f; --iron-soft: #2c2b24;
-  --brass: #e0a99d; --brass-fill: #d39a8e; --brass-soft: #3a2521; --blush: #e0a99d; --blush-soft: #3a2521;
-  --fig: #ecead9; --fig-far: #5f6653; --fig-focus: #e0a99d; --fig-focus-far: #8c6860; --fig-ground: #1f231a; --fig-prop: #4b5241;
-}
-:root[data-theme="dark"][data-look="chrome"] {
-  --stage: #08090a; --bg: #121315; --surface: #1a1c1f; --inset: #222529; --line: #33373c;
-  --ink: #eceef0; --ink-2: #b3b8be; --ink-3: #7f858c;
-  --jade: #8fc1c9; --jade-soft: #1f3033; --iron: #a6b0bb; --iron-soft: #262b31;
-  --brass: #e59ac3; --brass-fill: #d67fb0; --brass-soft: #3a1f2e; --blush: #e59ac3; --blush-soft: #3a1f2e;
-  --fig: #eceef0; --fig-far: #575c63; --fig-focus: #e59ac3; --fig-focus-far: #8f5d78; --fig-ground: #1a1c1f; --fig-prop: #474c53;
 }
 
 html { height: 100%; box-sizing: border-box; }
@@ -443,6 +416,135 @@ a.btn { text-decoration: none; }
 
 /* On a phone the page ground matches the app, and the studio when a session is running. */
 @media (max-width: 519px) { body { background: var(--bg); } html.playing body { background: var(--st-bg); } }
+
+/* =====================================================================================
+   Direction J. Everything below restates the look over the structural rules above.
+   ===================================================================================== */
+
+/* ---------- type ---------- */
+.wordmark, .h-display, .h-section, .hero-session .title, .move .mv-name, .stat .sv, .p-name, .quote, .phase .pn, .p-stats b { font-variation-settings: normal; }
+.h-display { font-weight: 600; font-size: 38px; line-height: 1; letter-spacing: -.02em; }
+.h-display em { font-style: normal; color: inherit; }
+.h-section { font-weight: 600; font-size: 23px; letter-spacing: -.012em; }
+.eyebrow { font-size: 13px; letter-spacing: 0; text-transform: none; font-weight: 500; }
+.quote { font-style: normal; font-weight: 500; border-left: 3px solid var(--carnelian); color: var(--ink); }
+button:focus-visible, [tabindex]:focus-visible, input:focus-visible, textarea:focus-visible { outline-color: var(--carnelian); }
+
+/* ---------- top bar: part of the field on every tab ---------- */
+.top { background-color: var(--field); background-image: var(--grain); background-size: 240px 240px; color: var(--field-ink); padding-block: 16px 12px; }
+.wordmark { font-weight: 700; font-size: 15px; letter-spacing: .22em; text-transform: uppercase; font-variation-settings: "opsz" 10; }
+.wordmark i { color: var(--bone); letter-spacing: 0; padding: 0 .22em 0 .06em; }
+.pill-note { background: transparent; color: var(--field-ink); border: 1px solid rgba(20, 34, 22, .45); border-radius: 8px; letter-spacing: .04em; text-transform: none; font-size: 12px; padding: 4px 9px; }
+.icon-btn { background: transparent; border: 1.5px solid rgba(20, 34, 22, .45); }
+.icon-btn svg { stroke: var(--field-ink); }
+.sheet .icon-btn, .sheet-head .icon-btn { border-color: var(--line); }
+.sheet .icon-btn svg { stroke: var(--ink); }
+
+/* ---------- Today: the field, the figure, the soft rise ---------- */
+.view { isolation: isolate; }
+.view > .stack-s:has(+ .hero-session) { color: var(--field-ink); gap: 6px; padding-top: 4px; }
+.view > .stack-s:has(+ .hero-session) .eyebrow { color: var(--field-ink-2); font-size: 14px; }
+.view > .stack-s:has(+ .hero-session) .h-display { font-size: 45px; }
+.view > .stack-s:has(+ .hero-session) .h-display em { display: block; font: 700 12.5px/1 var(--ui); letter-spacing: .16em; text-transform: uppercase; color: var(--bone); margin-top: 12px; }
+.view > .stack-s:has(+ .hero-session) .sub { color: var(--field-ink); }
+.hero-session { overflow: visible; background: none; border: 0; border-radius: 0; margin-top: -14px; margin-left: calc(-1 * var(--gutter-l)); margin-right: calc(-1 * var(--gutter-r)); }
+.hero-session .fig-wrap { position: relative; background: none; padding: 0 10px 22px;
+  --fig: var(--bone); --fig-far: var(--jade-deep); --fig-focus: var(--carnelian); --fig-focus-far: #9a5a45; --fig-ground: var(--field); --fig-prop: var(--jade-mid); }
+.hero-session .fig-wrap::before { content: ""; position: absolute; z-index: -2; left: 0; right: 0; bottom: 0; top: -1400px;
+  background-color: var(--field); background-image: var(--grain); background-size: 240px 240px; }
+/* clouding sits around the figure only and fades out before it reaches the lettering or the top bar */
+.hero-session .fig-wrap::after { content: ""; position: absolute; z-index: -1; left: 0; right: 0; bottom: 0; height: 400px;
+  background-image: var(--cloud), var(--shade); background-size: 900px 900px, 900px 900px; background-position: center bottom;
+  -webkit-mask-image: linear-gradient(to top, #000 50%, transparent); mask-image: linear-gradient(to top, #000 50%, transparent); }
+.hero-session .fig { filter: drop-shadow(0 7px 5px rgba(20, 34, 22, .22)); }
+.hero-session .body { position: relative; margin-top: -24px; padding: 28px var(--gutter-r) 4px var(--gutter-l); gap: 11px; background: var(--bg); border-radius: 68% 32% 0 0 / 34px 12px 0 0; }
+.hero-session .title { font-weight: 600; font-size: 39px; line-height: 1; letter-spacing: -.015em; }
+.hero-session .meta { align-items: baseline; gap: 4px 18px; font-size: 14px; color: var(--ink-2); }
+.hero-session .meta b { font: 600 31px/1 var(--display); margin-right: 2px; }
+.blocks { height: 9px; border-radius: 0; overflow: visible; }
+.blocks span { border-radius: 5px; }
+.blocks .b-warm { background: #848c81; } .blocks .b-main { background: var(--lapis); } .blocks .b-down { background: #cbcfc6; opacity: 1; }
+
+/* ---------- buttons, chips, tags: eased corners, no pills ---------- */
+.btn { border-radius: 11px; }
+.btn-primary { background-color: var(--carnelian); background-image: var(--grain); background-size: 240px 240px; color: var(--on-carnelian); box-shadow: 0 2px 0 rgba(120, 50, 25, .35); }
+.btn-ghost { background: transparent; border: 1.5px solid var(--ink); }
+.btn-quiet { border-radius: 10px; }
+.chip { border-radius: 10px; border-color: transparent; background: var(--surface); color: var(--ink); }
+.seg { border-radius: 12px; }
+.seg button { border-radius: 9px; }
+.seg button.on { background: var(--bg); }
+.tag { font-size: 12.5px; letter-spacing: 0; text-transform: none; border-radius: 9px; padding: 3px 9px; align-self: flex-start; }
+.tag.flex { background: var(--jade); color: var(--field-ink); }
+.tag.strength { background: var(--lapis); color: #f7f8f2; }
+.tag.control { background: #d0ac59; color: var(--field-ink); }
+.tag.plain { background: var(--inset); color: var(--ink-2); }
+
+/* ---------- week strip ---------- */
+.week { gap: 3px; margin-inline: -8px; }
+.day { background: var(--surface); border: 0; border-radius: 10px; gap: 2px; padding: 8px 0 7px; }
+.day .dow { font-size: 11.5px; letter-spacing: 0; text-transform: none; font-weight: 500; color: var(--ink-2); }
+.day .num { font: 600 22px/1.15 var(--display); }
+.day.today { background: var(--field); color: var(--field-ink); border-radius: 47% 53% 46% 54% / 56% 44% 56% 44%; }
+.day.today .dow { color: var(--field-ink); }
+.mk.class { border-color: var(--iron); }
+.mk.session { background: #d0ac59; }
+.mk.done { background: var(--jade-deep); }
+.day.today .mk.session, .day.today .mk.done { background: var(--field-ink); }
+
+/* ---------- surfaces: filled boxes, no hairline cards ---------- */
+.card, .routine, .ex-card, .move, .stat, .phase, .sess, .opt, .swatch { border-color: transparent; border-radius: 12px; }
+.phase.now, .opt.on, .swatch.on { border-color: var(--ink); }
+.sess.classday { border-color: var(--line); }
+.thumb { border-radius: 10px; }
+.sheet { border-radius: 22px 22px 0 0; }
+.sheet .fig-stage { border: 0; border-radius: 14px; }
+.standard { border-radius: 12px; }
+.dbtn, .scale button, .field { border-radius: 10px; }
+.stat .sv, .p-stats b { font-weight: 600; }
+.phase .pn, .move .mv-name { font-weight: 600; }
+.sess .sday, .status { letter-spacing: 0; text-transform: none; font-size: 12.5px; }
+.status.got { color: var(--jade-text); }
+.bench .bd.up { color: var(--jade-text); }
+.wk.done::before { background: var(--jade-deep); border-color: var(--jade-deep); }
+.wk.now::before { background: var(--carnelian); border-color: var(--carnelian); box-shadow: 0 0 0 4px var(--blush-soft); }
+.spark circle { fill: var(--carnelian); }
+.heat i.next { outline-color: var(--carnelian); }
+
+/* ---------- tab bar ---------- */
+.tab { font-size: 12px; font-weight: 500; letter-spacing: 0; }
+.tab.on { font-weight: 700; }
+.tab.on svg .dot { fill: var(--carnelian); }
+
+/* ---------- the session player: the field, with nothing behind the clock ---------- */
+.player { background-color: var(--field); background-image: var(--grain), radial-gradient(130% 70% at 10% 0%, rgba(255, 255, 235, .10), transparent 70%); background-size: 240px 240px, 100% 100%;
+  --fig: var(--bone); --fig-far: var(--jade-deep); --fig-focus: var(--carnelian); --fig-focus-far: #9a5a45; --fig-ground: var(--field); --fig-prop: var(--jade-mid); }
+.p-fig .fig { filter: drop-shadow(0 7px 5px rgba(20, 34, 22, .2)); }
+.p-top .count { font-size: 14px; letter-spacing: 0; text-transform: none; color: var(--field-ink-2); }
+.p-btn { border: 1.5px solid rgba(20, 34, 22, .45); }
+.p-btn.off { color: var(--field-ink-3); }
+.p-far, .p-plus { border-radius: 10px; }
+.p-far.on { color: var(--bone); }
+.p-block { font-size: 13px; letter-spacing: 0; text-transform: none; color: var(--field-ink); }
+.p-block .side { background: var(--field-ink); color: var(--bone); border-radius: 7px; letter-spacing: 0; padding: 2px 8px; }
+.p-name { font-weight: 600; font-size: 31px; letter-spacing: -.01em; }
+.p-clock { font-family: var(--display); font-weight: 600; letter-spacing: -.03em; line-height: .95; }
+.p-clock small { font-family: var(--ui); }
+.p-bar { height: 8px; border-radius: 5px; background: var(--jade-mid); }
+.p-bar i { background: var(--carnelian); border-radius: 5px; }
+.p-pole { background: var(--jade-mid); }
+.p-pole .bead { box-shadow: 0 0 0 4px rgba(185, 95, 63, .22); }
+.p-pole .tick { background: var(--field-ink-3); }
+.p-go { background-color: var(--carnelian); background-image: var(--grain); background-size: 240px 240px; color: var(--on-carnelian); box-shadow: 0 2px 0 rgba(120, 50, 25, .35); }
+.p-go.wide { border-radius: 14px; }
+.p-done .h-display em { color: var(--bone); }
+.p-done .btn-primary { background-color: var(--carnelian); color: var(--on-carnelian); }
+.p-done .scale button.on { color: var(--bone); }
+.p-stats div { border: 0; background: var(--st-surface); border-radius: 12px; }
+
+/* The session legend takes its swatch colors from the same rules as the bar. */
+.legend .b-warm { background: #848c81; } .legend .b-activate { background: var(--jade); } .legend .b-main { background: var(--lapis); }
+.legend .b-own { background: var(--brass-fill); } .legend .b-down { background: #cbcfc6; }
 
 </style>
 </head><body>
@@ -1110,7 +1212,7 @@ window.CONTENT = {"exercises":[{"id":"low-lunge","name":"Low lunge","pillar":"fl
   /* ---------- views ---------- */
   function viewToday() {
     var w = currentWeek(), ph = phaseOf(w), days = weekPlan(w), t = days[dowOf(TODAY)], out = [];
-    out.push('<div class="stack-s"><div class="eyebrow">' + esc(fmtDate(TODAY)) + '</div><h1 class="h-display">Week ' + w + ' of 12. <em>' + ph.name + '.</em></h1><p class="sub">' + ph.line + '</p></div>');
+    out.push('<div class="stack-s"><div class="eyebrow">' + esc(fmtDate(TODAY)) + '</div><h1 class="h-display">Week ' + w + ' of 12 <em>' + ph.name + '</em></h1><p class="sub">' + ph.line + '</p></div>');
 
     var s = t.session;
     if (s && !isDone(s.key)) {
@@ -1289,7 +1391,7 @@ window.CONTENT = {"exercises":[{"id":"low-lunge","name":"Low lunge","pillar":"fl
   function sheetPreview(key) {
     var s = resolveSession(key), body = '';
     body += '<div class="stack-s"><h2 class="h-display" style="font-size:30px">' + esc(s.title) + '</h2><div class="meta"><span><b>' + mins(s.seconds) + '</b> min</span><span><b>' + s.items.length + '</b> exercises</span>' + (s.phase ? '<span>' + phaseOf(s.week).name + ' phase</span>' : '') + '</div></div>';
-    body += blocksBar(s) + '<div class="legend">' + BLOCKS.map(function (b) { return s.items.some(function (i) { return i.block === b.id; }) ? '<span><i class="b-' + b.id + '" style="background:' + ({ warm: 'var(--ink-3)', activate: 'var(--jade)', main: 'var(--ink)', own: 'var(--brass-fill)', down: 'var(--line)' }[b.id]) + '"></i>' + b.name + '</span>' : ''; }).join('') + '</div>';
+    body += blocksBar(s) + '<div class="legend">' + BLOCKS.map(function (b) { return s.items.some(function (i) { return i.block === b.id; }) ? '<span><i class="b-' + b.id + '"></i>' + b.name + '</span>' : ''; }).join('') + '</div>';
     BLOCKS.forEach(function (b) {
       var its = s.items.filter(function (i) { return i.block === b.id; });
       if (!its.length) return;
@@ -1360,8 +1462,6 @@ window.CONTENT = {"exercises":[{"id":"low-lunge","name":"Low lunge","pillar":"fl
   function sheetSettings() {
     var st = S.settings, body = '';
     body += '<div class="stack-s"><h2 class="h-display" style="font-size:30px">Settings</h2></div>';
-    var looks = [['jade', 'Jade', ['#f1ede2', '#20251c', '#47705a', '#b08a3e']], ['bloom', 'Bloom', ['#ebebdf', '#3e4a35', '#6f7f5c', '#c08a7e']], ['chrome', 'Chrome', ['#eceded', '#1b1d20', '#3f6b73', '#b0578a']]];
-    body += '<div class="stack-s"><div class="eyebrow">Look</div><div class="swatches">' + looks.map(function (l) { return '<button class="swatch' + ((st.look || 'jade') === l[0] ? ' on' : '') + '" data-act="look" data-look="' + l[0] + '"><span class="dots">' + l[2].map(function (c) { return '<i style="background:' + c + '"></i>'; }).join('') + '</span><span>' + l[1] + '</span></button>'; }).join('') + '</div><p class="note">Three palettes to react to. Light and dark follow your device.</p></div>';
     body += '<div class="stack-s"><div class="eyebrow">Session</div><div class="card" style="padding:2px 16px"><button class="toggle' + (st.sound ? ' on' : '') + '" data-act="toggle" data-k="sound"><span><b>Sound cues</b><br><span class="note">Countdown ticks and a tone when a hold ends.</span></span><span class="switch"></span></button><button class="toggle' + (st.voice ? ' on' : '') + '" data-act="toggle" data-k="voice"><span><b>Spoken cues</b><br><span class="note">Names the exercise and calls side changes.</span></span><span class="switch"></span></button></div></div>';
     body += '<div class="stack-s"><div class="eyebrow">Loads in</div><div class="seg">' + ['kg', 'lb'].map(function (u) { return '<button class="' + (st.unit === u ? 'on' : '') + '" data-act="unit" data-u="' + u + '">' + u + '</button>'; }).join('') + '</div></div>';
     var p = S.profile;
@@ -1558,7 +1658,6 @@ window.CONTENT = {"exercises":[{"id":"low-lunge","name":"Low lunge","pillar":"fl
   function renderAll(keepScroll) {
     var app = document.getElementById('app'), view = document.getElementById('view'), top = keepScroll && view ? view.scrollTop : 0;
     stopFigs();
-    document.documentElement.setAttribute('data-look', S.settings.look || 'jade');
     document.documentElement.classList.toggle('playing', !!P);
     var tabs = [['today', 'Today'], ['plan', 'Plan'], ['library', 'Library'], ['moves', 'Skills'], ['progress', 'Progress']];
     var under = (UI.sheet || P) ? ' inert' : '';
@@ -1593,7 +1692,6 @@ window.CONTENT = {"exercises":[{"id":"low-lunge","name":"Low lunge","pillar":"fl
     mstatus: function (d) { if (d.s === 'none') delete S.moves[d.id]; else S.moves[d.id] = d.s; save(); renderAll(true); },
     trainfor: function (d) { var m = MOVE[d.id]; var fs = (m.needs.flex || []).concat(m.needs.strength || []).map(function (n) { return n.focus; }).filter(function (f, i, a) { return FOCUS[f] && !FOCUS[f].hidden && a.indexOf(f) === i; }).slice(0, 2); quizStart({ focus: fs, from: d.id }); S.moves[d.id] = S.moves[d.id] === 'got' ? 'got' : 'working'; save(); renderAll(); },
     benchsave: function (d) { var el = document.getElementById('bench-val'), v = parseFloat(el && el.value); if (isNaN(v)) { if (el) el.focus(); return; } (S.bench[d.id] = S.bench[d.id] || []).push({ date: iso(TODAY), value: v }); save(); UI.sheet = null; renderAll(true); },
-    look: function (d) { S.settings.look = d.look; save(); renderAll(true); },
     toggle: function (d) { S.settings[d.k] = !S.settings[d.k]; save(); if (d.k === 'voice' && S.settings.voice) say('Spoken cues on'); renderAll(true); },
     copydata: function () {
       function done(ok) { UI.copied = ok ? 'Copied. Paste it into a message to share your plan, logs, and loads.' : 'Copy did not work in this browser.'; renderAll(true); }
